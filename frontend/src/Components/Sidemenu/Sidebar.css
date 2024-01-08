@@ -1,0 +1,101 @@
+.sidemenu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+   
+    /* .mobilemenu {
+        display: flex;
+        justify-content: space-between;
+        width: 30vw;
+        padding: 10px 20px ;
+    
+    }
+    .mobilemenu p{
+        color: white;
+    } */
+       
+       .headingnav{
+           display: none;
+       }
+       
+       .sidemenu{
+        position: relative;
+           color: black;
+           display: block;
+           font-size: 30px;
+           padding: 5px;
+           height: 42px;
+           margin-top: -70px;
+           border-radius: 10px;
+           margin-left: 5px;
+           background-image: linear-gradient(to right, #ffcc00, #ff6699); /* Replace these colors with your gradient */
+
+       }
+       /* .mobilemenu{
+           display: flex;
+           position: relative;
+           z-index: 99;
+          }
+       .mobilemenu {
+           position: relative;
+           z-index: 99;
+           background-color: blue;
+       } */
+       .logindiv button{
+           display: none;
+       }
+    
+
+  }
+
+  
+  @media only screen and (max-width: 500px) {
+   
+   
+ /* .mobilemenu {
+     display: flex;
+     justify-content: space-between;
+     width: 30vw;
+     padding: 10px 20px ;
+ 
+ }
+ .mobilemenu p{
+     color: white;
+ } */
+    
+    .headingnav{
+        display: none;
+    }
+    
+    .sidemenu{
+        color: black;
+        display: block;
+        font-size: 30px;
+        padding: 5px;
+        height: 42px;
+        width: 40px;
+        position: relative;
+
+        margin-top: -70px;
+        border-radius: 10px;
+        margin-left: 5px;
+        background-image: linear-gradient(to right, #ffcc00, #ff6699); /* Replace these colors with your gradient */
+
+    }
+    /* .mobilemenu{
+        display: flex;
+        position: relative;
+        z-index: 99;
+       }
+    .mobilemenu {
+        position: relative;
+        z-index: 99;
+        background-color: blue;
+    } */
+    .logindiv button{
+        display: none;
+    }
+    
+  }

@@ -1,0 +1,168 @@
+/* ColorChangingText.module.css */
+*{
+    font-family: 'jost' , sans-serif;
+}
+.logotext h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+ /* Create a linear gradient */
+ background-image: linear-gradient(to right, #ffcc00, #ff6699); /* Replace these colors with your gradient */
+  
+ /* Set background-clip to text to show the gradient through the text */
+ -webkit-background-clip: text;
+ background-clip: text;
+
+ /* Hide the original text */
+ color: transparent;
+}
+ 
+   
+  
+  
+.mainnav{
+background-color: rgb(235, 225, 225);
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+width:100vw;
+    display: flex;
+     justify-content: space-around;
+     /* border: 2px solid red; */
+     padding: 10px;
+}
+
+ .headingnav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    padding: 10px 20px ;
+}
+.headingnav p{
+    color: rgb(49, 46, 46);
+
+}
+a{
+    text-decoration: none;
+
+}
+.logindiv{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 15vw;
+    justify-content: space-between;
+}
+.logindiv button{
+    height: 5.4vh;
+    width: 6vw;
+    background-color: rgb(205, 196, 196);
+    color: rgb(53, 51, 51);
+    border-radius: 12px;
+    border: none;
+}
+
+
+@keyframes changeColor {
+    0% { color: red; } /* Start color */
+    50% { color: white; } /* Midway color */
+    100% { color: green; } /* End color */
+  }
+  
+  .colorChangingText {
+    animation: changeColor 5s infinite; /* Animation duration: 5 seconds, infinite loop */
+  }
+  @media only screen and (max-width: 800px) {
+    /* .mobilemenu {
+        display: flex;
+        justify-content: space-between;
+        width: 30vw;
+        padding: 10px 20px ;
+    
+    }
+    .mobilemenu p{
+        color: white;
+    } */
+       
+       .headingnav{
+           display: none;
+       }
+       
+       
+       /* .mobilemenu{
+           display: flex;
+           position: relative;
+           z-index: 99;
+          }
+       .mobilemenu {
+           position: relative;
+           z-index: 99;
+           background-color: blue;
+       } */
+       .logindiv button{
+           display: none;
+       }
+       .logotext h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+     /* Create a linear gradient */
+     background-image: linear-gradient(to right, #ffcc00, #ff6699); /* Replace these colors with your gradient */
+      
+     /* Set background-clip to text to show the gradient through the text */
+     -webkit-background-clip: text;
+     background-clip: text;
+    
+     /* Hide the original text */
+     color: transparent;
+     margin-left: 55px;
+    }
+
+  }
+
+  
+  @media only screen and (max-width: 500px) {
+   
+   
+ /* .mobilemenu {
+     display: flex;
+     justify-content: space-between;
+     width: 30vw;
+     padding: 10px 20px ;
+ 
+ }
+ .mobilemenu p{
+     color: white;
+ } */
+    
+    .headingnav{
+        display: none;
+    }
+    
+    
+    /* .mobilemenu{
+        display: flex;
+        position: relative;
+        z-index: 99;
+       }
+    .mobilemenu {
+        position: relative;
+        z-index: 99;
+        background-color: blue;
+    } */
+    .logindiv button{
+        display: none;
+    }
+    .logotext h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+     /* Create a linear gradient */
+     background-image: linear-gradient(to right, #ffcc00, #ff6699); /* Replace these colors with your gradient */
+      
+     /* Set background-clip to text to show the gradient through the text */
+     -webkit-background-clip: text;
+     background-clip: text;
+    
+     /* Hide the original text */
+     color: transparent;
+     margin-left: 55px;
+    }
+  }
